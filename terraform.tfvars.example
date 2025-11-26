@@ -1,0 +1,11 @@
+# LiteLLM Configuration
+# Keys must begin with "sk-"
+# Example: "sk-12345"
+litellm_master_key = "sk-xxxxxxxxxxx"
+litellm_salt_key   = "sk-xxxxxxxxxxx"
+
+# ComfyUI Paths
+# Windows Example: "C:\\Users\\YourName\\comfyui-models"
+# Linux Example: "/home/username/comfyui-models"
+comfyui_path1 = "C:\\Users\\YourName\\ComfyModels"
+comfyui_path2 = "C:\\Users\\YourName\\ComfyNodes"

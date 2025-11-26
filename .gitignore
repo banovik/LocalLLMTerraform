@@ -1,0 +1,11 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.tfvars.backup
+
+# LiteLLM directory (optional - uncomment if you don't want to track it)
+# litellm/
+

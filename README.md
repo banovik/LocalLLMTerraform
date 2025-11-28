@@ -20,20 +20,29 @@ Additionally, if you want to utilize your GPU for the LLMs and image generator, 
 
 ## Setup
 
-1. **Initialize Terraform**:
+1. **Prepare Directory**
+   - Create a new directroy that will contain your terraform files (e.g., `TFllm`).
+   - Navigate to that directory in your terminal.
+   ```bash
+   cd TFllm
+   ```
+
+2. **Initialize Terraform**:
    ```bash
    terraform init
    ```
 
-2. **Configure Variables**:
-   - Copy `terraform.tfvars.example` to `terraform.tfvars`
+3. **Configure Variables**:
+   - Copy the applicable main file `main.tf.mac` or `main.tf.windows` to `main.tf`
+   - If using Windows without a dedicated GPU, be sure to remove all lines including `gpu` or `nvidia`
+   - Copy the applicable variables file `terraform.tfvars.mac` or `terraform.tfvars.windows` to `terraform.tfvars`
    - Edit `terraform.tfvars` and replace the defaults with your desired values.
      - `litellm_master_key`: Your LiteLLM master key
      - `litellm_salt_key`: Your LiteLLM salt key
      - `comfyui_path1`: Local path for ComfyUI models directory
      - `comfyui_path2`: Local path for ComfyUI custom_nodes directory
 
-3. **Apply Configuration**:
+4. **Apply Configuration**:
    ```bash
    terraform apply
    ```

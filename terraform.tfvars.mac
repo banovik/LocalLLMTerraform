@@ -1,0 +1,11 @@
+# LiteLLM Configuration
+# Keys must begin with "sk-"
+# Example: "sk-12345"
+litellm_master_key = "sk-xxxxxxxxxxx"
+litellm_salt_key   = "sk-xxxxxxxxxxx"
+
+# ComfyUI Paths
+# Mac Example: "/home/username/comfyui-models"
+# You can also use ~ for home directory: "~/comfyui-models"
+comfyui_path1 = "/home/username/ComfyModels"
+comfyui_path2 = "/home/username/ComfyNodes"
